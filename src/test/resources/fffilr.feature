@@ -1,8 +1,12 @@
-
+@sanity
 Feature: SignUp
- 
-  Scenario Outline: AccountCreation
-    Given user launchBrowser
+
+Background:
+When user runs for a scenario
+
+@sanity
+Scenario Outline: AccountCreation
+   
     When user enters firstname "<fname>"
     And user enters lastname  "<lname>"
     And user enters phno "<ph>"
